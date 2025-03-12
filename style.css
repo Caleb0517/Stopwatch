@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(255, 255, 255, 0.8);
+}
+
+.container {
+    width: 90%;
+    max-width: 450px;
+    height: 70vh;
+    font-size: 1.5rem;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.197);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+    border-radius: 10px;
+    color: black;
+}
+
+#container {
+    font-size: 2.5rem;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.09);
+    box-shadow: -1px 1px 2px 1px rgb(44, 152, 44), 1px 1px 2px 1px rgb(70, 70, 247), 1px -1px 5px 2px rgb(187, 64, 64), -1px -1px 2px 1px rgba(255, 0, 208, 0.8);
+    width: 80%;
+    height: auto;
+    padding: 30px;
+    border-radius: 10px;
+    font-family: monospace;
+}
+
+#controls {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+#controls button {
+    padding: 10px;
+    width: 80px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    color: rgba(255, 255, 255, 0.903);
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+#controls button:hover{
+    opacity: 0.92;
+}
+#controls button:active{
+    opacity: 0.8;
+}
+#controls #start {
+    background-color: rgb(44, 152, 44);
+}
+#controls #stop {
+    background-color: rgb(187, 64, 64);
+}
+#controls #reset {
+    background-color: rgb(70, 70, 247);
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        height: auto;
+        gap: 30px;
+        padding: 50px 0;
+    }
+
+    #container {
+        font-size: 2rem;
+        padding: 20px;
+    }
+
+    #controls button {
+        width: 70px;
+        padding: 8px;
+    }
+}
+
+@media (min-width: 769px) {
+    .container {
+        width: 80%;
+        max-width: 600px;
+    }
+
+    #container {
+        font-size: 3rem;
+        padding: 40px;
+    }
+
+    #controls button {
+        width: 100px;
+        padding: 12px;
+    }
+}
